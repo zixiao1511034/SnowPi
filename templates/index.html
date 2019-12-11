@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<head>
+   <title>{{ title }}</title>
+   <!-- <link rel="stylesheet" href="../static/style.css/"> -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+
+<body>
+   <h1>Hello, World!</h1>
+   <h2>Button pressed: {{ button }}</h1>
+      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+      <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+
+</html>

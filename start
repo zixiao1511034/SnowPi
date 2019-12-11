@@ -1,0 +1,4 @@
+#!/bin/bash
+
+python /home/pi/Documents/rpiWebServer/send3.py &
+sudo python main.py
