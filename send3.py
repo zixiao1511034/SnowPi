@@ -7,14 +7,11 @@ def send():
     # api key
 
     print("start sending email")
-    # client = sendgrid.SendGridClient(
-    #     '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')
-    client = sendgrid.SendGridClient(
-        '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')
+    client = sendgrid.SendGridClient(<KEY>)
 
     message = sendgrid.Mail()
-    message.add_to("yz2455@cornell.edu")
-    message.set_from("zixiao1511034@outlook.com")
+    message.add_to(<EMAIL>)
+    message.set_from(<EMAIL>)
     message.set_subject("Deep Snow Alert!")
     message.set_html("Snow is deep, be careful!!")
     client.send(message)
